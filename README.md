@@ -27,7 +27,7 @@
        encoded_img=encode_img(image1)
        decoded_img=base64.b64decode(encoded_img)
     ```
- * **Node-Red Dashboard**
- 
-      ![]()
+ * **노드 레드(Node-Red)부**  
+    ![노드레드](./img/노드레드.jpg)  
+    > 다음과 같이 노드를 구성하였고 관련된 Node_import 정보는 [이곳](./Node-Red_import/import_node.md)을 참고 바람  
  ---
