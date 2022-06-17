@@ -7,16 +7,15 @@ import base64
 import paho.mqtt.client as mqtt
 
 
-mqtt=mqtt.Client("JHS")
-mqtt.connect("192.168.25.39",1883)
+mqtt=mqtt.Client("Client_ID")
+mqtt.connect("IP",1883)
 mqtt.loop(2)
 
 
 
 # Load the model
-model = load_model('C:/Users/arson/Desktop/prolab_embedded/head/keras_model.h5')
+model = load_model('File_Path')
 
-#classes = ['Scissors', 'Rock', 'Paper','Person']
 clesses =['Headphone','Non']
 # Create the array of the right shape to feed into the keras model
 # The 'length' or number of images you can put into the array is
