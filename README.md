@@ -28,7 +28,7 @@
      ```
 * **노드 레드(Node-Red)부분**  
     ![노드레드](./img/노드레드.jpg)  
-    A. 다음과 같이 노드를 구성하였고 관련된 Node_import 정보는 [이곳](./Node-Red_import/import_node.md)을 참고 바람    
+    A. 다음과 같이 노드를 구성하였고 관련된 Node_import 정보는 **[이곳](./Node-Red_import/import_node.md)** 을 참고 바람   
 * **노드 레드 대시보드(Node-Red Dashboard)부분**  
     ![대시보드](./img/대시보드.jpg)  
     A. 대시보드는 크게 ***객체 검출**과 ***움직임 차트** 부분으로 나누어져 있음  
