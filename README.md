@@ -42,5 +42,44 @@
     
     E. Dashboard ***CSS***를 통하여 기존의 딱딱한 노드레드 UI를 깔끔하고 유려하게 바꾸고 사용자 친화적으로 바꿈
 * **Rp2040(MicroPyhton)부분**
+    A. 가속도와 자이로스코프의 3축(X,Y,Z)을 각 변수에 저장 
+       ```python 
+          accel_x, accel_y, accel_z = lsm.read_accel()
+          gyro_x, gyro_y, gyro_z = lsm.read_gyro()
+       ```
+    B. 가속도와 자이로스코프의 3축(X,Y,Z)을 원하는 값으로 만들기 위하여 계산과 반올림을 시켜줌
+       ```python 
+          accx=round(accel_x,1)
+          acc_x=accx / 16384.0
+          ***
+          gyrox=round(gyro_x,1)
+          ***
+       ```
+     C. 각 값의 평균을 계산하기 위해 리스트로 만들고 계산함
+       ```python 
+          cntx = list([gyrox])
+          ***
+          avgx = sum(cntx,0.0)/len(cntx)
+          ***
+       ```
+     D. 계산된 값을 MQTT를 사용하여 Jetson Nano에 송신함
+       ```python 
+          client.publish('chart/x',"{0}".format(avgx))
+          client.publish('chart/y',"{0}".format(avgy))
+          client.publish('chart/z',"{0}".format(avgz))
+       ```
+     E. 움직일 때와 정지 시 범위를 계산하여 MQTT로 값을 Jetson Nano에 송신함
+       ```python 
+          if (-0.1 >= avgx or 0.1 <= avgx) or (-0.1 >= avgy or 0.1 <= avgy) or (-0.1 >= avgz or 0.1 <= avgz):
+              step1 = 0
+          if (step1 == 1):
+              continue
+          if (-10 < avgx < 10) and (-10 < avgy < 10) and (-10 < avgz < 10): #mqtt 빈도를 고려하여 넓게 잡음
+              step1 =1
+              client.publish(TOPIC,'Stop') 
+            
+          else:
+              client.publish(TOPIC,'Move')
+       ```
  
  * **MQTT부**  
