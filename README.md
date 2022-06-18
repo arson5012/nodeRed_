@@ -117,7 +117,7 @@ Node-Red + rp2040 + Teachable Machine Streaming
  ### **MQTT부**  
  ##
    #### Publish 
-   * rp2040과 객체 검출 영상 및 검출 결과 출력 시 사용
+   * p2040과 객체 검출 영상 및 검출 결과 출력 시 사용
    #### Client
    * 영상 정보와 rp2040의 3축에 대한 값을 수신  
       ```python 
@@ -132,3 +132,4 @@ Node-Red + rp2040 + Teachable Machine Streaming
 > ![객체 검출 부분](./img/Main.gif)  
 > 
 > ![버튼 구동 부분](./img/Web.gif)
+##
