@@ -7,9 +7,9 @@ Node-Red + rp2040 + Teachable Machine Streaming
   * Git Commit & Push
   
 * #### 💡 구동 환경
-  * [Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/jetson-nano-developer-kit)(4GB)
+  * <a href="https://developer.nvidia.com/embedded/jetson-nano-developer-kit" target="_blank">Jetson Nano Developer Kit(4GB)</a>  
   * OS Ver: Ubuntu 20.04 (jetpack)
-  * SENSOR:[Rp2040](https://docs.arduino.cc/hardware/nano-rp2040-connect)
+  * <a href="https://docs.arduino.cc/hardware/nano-rp2040-connect" target="_blank">Rp2040</a>  
   * USB Camera
   * IDE: Pycharm, Thonny, Visual Studio Code
 
@@ -51,7 +51,8 @@ Node-Red + rp2040 + Teachable Machine Streaming
 ### **노드 레드(Node-Red)부분**  
 ##
   ![노드레드](./img/노드레드.jpg)  
-  * 다음과 같이 노드를 구성하였고 관련된 Node_import 정보는 **[이곳](./Node-Red_import/import_node.md)** 을 참고 바람   
+  * 다음과 같이 노드를 구성하였고 관련된 Node_import 정보는 [이곳](./Node-Red_import/import_node.md){:target="_blank"} 을 참고 바람   
+  * <a href="./Node-Red_import/import_node.md" target="_blank">이곳</a> 
 ### **노드 레드 대시보드(Node-Red Dashboard)부분**  
 ##
   ![대시보드](./img/대시보드.jpg)  
