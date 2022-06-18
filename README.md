@@ -2,6 +2,17 @@
 임베디드 시스템 응용 기말고사 작품  
 Node-Red + rp2040 + Teachable Machine Streaming  
 <!-------------------------------------------------------------Part 1------------------------------------------------------------------------------------------>
+* #### :family: 팀원
+  * 정휘성
+  * Git Commit & Push
+  
+* #### 💡 구동 환경
+  * [Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/jetson-nano-developer-kit)(4GB)
+  * OS Ver: Ubuntu 20.04 (jetpack)
+  * SENSOR:[Rp2040](https://docs.arduino.cc/hardware/nano-rp2040-connect)
+  * USB Camera
+  * IDE: Pycharm, Thonny, Visual Studio Code
+
 ## 블록도
 ![블록도](./img/블록도.jpg) 
 
@@ -118,4 +129,6 @@ Node-Red + rp2040 + Teachable Machine Streaming
 
 ##
 ## 구동
-* 구동 환경 
+![객체 검출 부분](./img/Main.gif)  
+
+![버튼 구동 부분](./img/.gif)
