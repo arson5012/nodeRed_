@@ -132,5 +132,6 @@ Node-Red + rp2040 + Keras UI
 ## 구동
 > ![객체 검출 부분](./img/Main.gif)  
 > 
-> ![버튼 구동 부분](./img/Web.gif)
+> ![버튼 구동 부분](./img/Web.gif)  
+> [구동 영상](./)
 ##
