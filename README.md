@@ -14,7 +14,7 @@ Node-Red + rp2040 + Teachable Machine Streaming
   * IDE: Pycharm, Thonny, Visual Studio Code
 
 ## 블록도
-![블록도](./img/블록도최종.jpg) 
+![블록도](./img/블록도_최종.jpg) 
   
 
 
