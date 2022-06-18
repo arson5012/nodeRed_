@@ -48,11 +48,11 @@ Node-Red + rp2040 + Teachable Machine Streaming
           encoded_img=encode_img(image1)
           decoded_img=base64.b64decode(encoded_img)
        ```
-## **노드 레드(Node-Red)부분**  
+### **노드 레드(Node-Red)부분**  
 ##
   ![노드레드](./img/노드레드.jpg)  
   * 다음과 같이 노드를 구성하였고 관련된 Node_import 정보는 [이곳](./Node-Red_import/import_node.md) 을 참고 바람   
-## **노드 레드 대시보드(Node-Red Dashboard)부분**  
+### **노드 레드 대시보드(Node-Red Dashboard)부분**  
 ##
   ![대시보드](./img/대시보드.jpg)  
   * 대시보드는 크게 ***객체 검출**과 ***움직임 차트** 부분으로 나누어져 있음  
@@ -65,7 +65,7 @@ Node-Red + rp2040 + Teachable Machine Streaming
   * 두개의 ***버튼***을 구성하고 자바스크립트로 개인 네이버 블로그와 깃허브 주소를 연결하여 ***클릭 시 새창 이벤트***로 열릴 수 있게 함
     
   * Dashboard ***CSS***를 통하여 기존의 딱딱한 노드레드 UI를 깔끔하고 유려하게 바꾸고 사용자 친화적으로 바꿈
-## **Rp2040(MicroPyhton)부분**  
+### **Rp2040(MicroPyhton)부분**  
 ##
 
   1. 가속도와 자이로스코프의 3축(X,Y,Z)을 각 변수에 저장 
